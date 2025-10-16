@@ -952,20 +952,72 @@
 //     return 0;
 // }
 
-// }#include <iostream>
+// class Search {
+// public:
+//     int binary(int data[], int size, int target) {
+//         int left = 0;
+//         int right = size - 1;
 
-#include <iostream>
-#include <cmath>
-using namespace std;
-int main()
-{
+//         while (left <= right) {
+//             int mid = (left + right) / 2;
 
-    int n;
-    cin >> n;
-    int array[100];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> array[i];
-    }
-    cout<<array[revers(i)];
-}
+//             if (data[mid] == target)
+//                 return mid;
+//             else if (data[mid] < target)
+//                 left = mid + 1;
+//             else
+//                 right = mid - 1;
+//         }
+
+//         return -1;
+//     }
+// };
+
+// int main() {
+//     int num[] = {1, 3, 5, 7, 9};
+//     int size = sizeof(num) / sizeof(num[0]);
+
+//     Search s;
+//     int result = s.binary(num, size, 7);
+
+//     if (result != -1)
+//         cout << "Element found at index: " << result << endl;
+//     else
+//         cout << "Element not found." << endl;
+
+//     return 0;
+// }
+
+// يعني المفرض اخليه ماشي كده صح
+//  ده الفهرس للعنصر [0]-->[1]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
+//  ده الفهرس للعنصر [1]-->[2]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
+//  ده الفهرس للعنصر [2]-->[3]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
+//  ده الفهرس للعنصر [3]-->[0]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
+
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int array[100];
+//     int o[100];
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> array[i];
+//     }
+//     for (int j = 0; j < n; j++)
+//     {
+//         o[array[j] - 1] = j + 1;
+
+//     }
+//         for (int i = 0; i < n; i++)
+//         {
+
+//             cout << o[i] << " ";
+//         }
+
+//         cout << endl;
+// }
