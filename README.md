@@ -15,3 +15,8 @@ Each file contains an example or experiment on a specific topic.
 - linked list.cpp →Linked List Experiment
 -  
 - task ayah.cpp → Training file
+- 
+- tree data structuer → code
+- 
+- binary search tree → code 
+-فقثث
