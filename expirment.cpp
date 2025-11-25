@@ -994,30 +994,57 @@
 //  ده الفهرس للعنصر [2]-->[3]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
 //  ده الفهرس للعنصر [3]-->[0]اما ده المفروض يكون نتيجه العكس اللي تطلع انا كاتب الفهرس الخاص بيها
 
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
 
 // int main()
 // {
-//     int n;
-//     cin >> n;
-//     int array[100];
-//     int o[100];
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> array[i];
-//     }
-//     for (int j = 0; j < n; j++)
-//     {
-//         o[array[j] - 1] = j + 1;
-
-//     }
-//         for (int i = 0; i < n; i++)
-//         {
-
+    //     int n;
+    //     cin >> n;
+    //     int array[100];
+    //     int o[100];
+    //     for (int i = 0; i < n; i++)
+    //     {
+        //         cin >> array[i];
+        //     }
+        //     for (int j = 0; j < n; j++)
+        //     {
+            //         o[array[j] - 1] = j + 1;
+            
+            //     }
+            //         for (int i = 0; i < n; i++)
+            //         {
+                
 //             cout << o[i] << " ";
 //         }
 
 //         cout << endl;
 // }
+
+// 
+#include <iostream>
+using namespace std;
+
+void the_value(int n)
+{
+    if (n < 10) {
+        cout << n << " ";
+        return;
+    }
+
+    the_value(n / 10);
+    cout << n % 10 << " ";
+}
+
+int main()
+{
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+        the_value(N);
+        cout << endl;
+    }
+
+    return 0;
+}
