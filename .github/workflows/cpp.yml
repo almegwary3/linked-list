@@ -15,4 +15,4 @@ jobs:
                 run: g++ "131-A. cAPS lOCK.cpp" -o main
                 
               - name: Run
-                run: ./main
+                run: echo "cAPS" | ./main
